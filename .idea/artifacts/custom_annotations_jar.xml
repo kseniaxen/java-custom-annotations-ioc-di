@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="custom-annotations:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/custom_annotations_jar</output-path>
+    <root id="root">
+      <element id="archive" name="custom-annotations.jar">
+        <element id="module-output" name="custom-annotations" />
+      </element>
+      <element id="library" level="project" name="reflections-0.9.12" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: org.tyaa.demo.java.console.customannotations.Main
+Class-Path: reflections-0.9.12.jar
+
