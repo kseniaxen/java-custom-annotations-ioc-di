@@ -4,6 +4,7 @@ import org.tyaa.demo.java.console.customannotations.annotations.Getter;
 import org.tyaa.demo.java.console.customannotations.annotations.ManagedBean;
 import org.tyaa.demo.java.console.customannotations.annotations.Setter;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -27,6 +28,14 @@ public class Validator {
             String nameValue =
                     (String) m.invoke(cl.getAnnotation(managedBeanClass), null);
             System.out.println("Bean's name - " + nameValue);
+
+            try{
+                Constructor<Class>cons = cl.getConstructor();
+                System.out.println("Constructor without params: "+cons);
+            }catch (Exception e){
+                System.out.println("Dont have this constructor!");
+            }
+
         }
         // Проверка 2:
         // есть ли в описании исследуемого типа (класса) две аннотации,

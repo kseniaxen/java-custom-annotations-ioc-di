@@ -8,6 +8,7 @@ import java.io.Serializable;
 
 @ManagedBean(name = "cookies")
 public class Cookies implements Serializable {
+    public Cookies() { }
     @Setter
     public void setCookie () {
         System.out.println("setCookie");

@@ -12,7 +12,7 @@ import java.util.Set;
 
 public class Main {
 
-    public static void main(String[] args) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException, InstantiationException {
+    public static void main(String[] args) throws IllegalAccessException, NoSuchMethodException, InvocationTargetException, InstantiationException, ClassNotFoundException {
 
         Validator.validate(Cookies.class);
         Validator.validate(IsNotBean.class);
